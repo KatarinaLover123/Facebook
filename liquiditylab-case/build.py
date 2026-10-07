@@ -1,68 +1,28 @@
-import random, math, sys
+import sys
 out = sys.argv[1]
 W, H, R = 74.4, 150.0, 12.0          # case back, mm
 BLEED = 3.0
 CAM = (4.2, 4.2, 39.0, 39.0, 9.5)    # camera cutout x,y,w,h,r
-BG, PANEL, BULL, BEAR, AMBER, TEXT, DIM = "#080810","#0A0A11","#44BBA8","#F5505F","#F5AC6F","#F2F4F9","#565B6B"
-FONTS = "@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap');"
-
-def candles():
-    random.seed(7)
-    n, x0, x1, top, bot = 22, 5.0, 69.4, 98.0, 136.0
-    # price path: drift down into equal lows, sweep below, then reclaim and rally
-    p, path = 50.0, []
-    script = [-1,-2,1,-2,-1,1,-2,0,1,-1,0,-6,5,3,2,-1,3,2,-1,3,2,3]
-    for s in script:
-        o = p; c = p + s*1.6 + random.uniform(-.4,.4)
-        hi = max(o,c)+random.uniform(.5,1.8); lo = min(o,c)-random.uniform(.5,1.8)
-        path.append((o,hi,lo,c)); p = c
-    lows = [b[2] for b in path]; highs=[b[1] for b in path]
-    mn, mx = min(lows), max(highs)
-    Y = lambda v: bot - (v-mn)/(mx-mn)*(bot-top)
-    step = (x1-x0)/n; bw = step*0.56
-    g = []
-    eq = Y(min(lows[:11]))  # equal-lows pool before the sweep bar
-    g.append(f'<line x1="{x0}" y1="{eq:.2f}" x2="{x0+step*12}" y2="{eq:.2f}" stroke="{AMBER}" stroke-width=".35" stroke-dasharray="1.2 .9"/>')
-    g.append(f'<text x="{x0}" y="{eq+3.0:.2f}" font-family="IBM Plex Mono" font-weight="500" font-size="1.9" letter-spacing=".35" fill="{AMBER}">SELL-SIDE LIQUIDITY</text>')
-    for i,(o,hi,lo,c) in enumerate(path):
-        cx = x0 + step*(i+.5); col = BULL if c>=o else BEAR
-        g.append(f'<line x1="{cx:.2f}" y1="{Y(hi):.2f}" x2="{cx:.2f}" y2="{Y(lo):.2f}" stroke="{col}" stroke-width=".32"/>')
-        yt, yb = Y(max(o,c)), Y(min(o,c))
-        g.append(f'<rect x="{cx-bw/2:.2f}" y="{yt:.2f}" width="{bw:.2f}" height="{max(yb-yt,.4):.2f}" fill="{col}"/>')
-    sx = x0 + step*11.5; sy = Y(path[11][2])
-    g.append(f'<rect x="{sx-step*.55:.2f}" y="{Y(path[11][1])-1.2:.2f}" width="{step*1.1:.2f}" height="{sy-Y(path[11][1])+2.4:.2f}" rx=".6" fill="none" stroke="{AMBER}" stroke-width=".3" opacity=".9"/>')
-    g.append(f'<text x="{sx+step*.8:.2f}" y="{sy+2.2:.2f}" font-family="IBM Plex Mono" font-weight="500" font-size="1.9" letter-spacing=".35" fill="{AMBER}">SWEPT</text>')
-    return "\n".join(g)
-
-def logo(cx, cy, s):
-    # droplet (liquidity) holding three candles (lab / market structure)
-    d = (f"M {cx} {cy-11*s} C {cx+3*s} {cy-6.5*s} {cx+8.5*s} {cy-1.5*s} {cx+8.5*s} {cy+3.5*s} "
-         f"A {8.5*s} {8.5*s} 0 0 1 {cx-8.5*s} {cy+3.5*s} C {cx-8.5*s} {cy-1.5*s} {cx-3*s} {cy-6.5*s} {cx} {cy-11*s} Z")
-    c = [(-3.6,2.0,6.2,BULL,-0.5,8.6),(0,-1.2,4.4,BEAR,-2.6,5.6),(3.6,-3.6,9.4,BULL,-5.2,7.4)]
-    parts = [f'<path d="{d}" fill="none" stroke="{TEXT}" stroke-width="{.75*s}" stroke-linejoin="round"/>']
-    for dx, top, h, col, wt, wb in c:
-        x = cx+dx*s
-        parts.append(f'<line x1="{x}" y1="{cy+wt*s}" x2="{x}" y2="{cy+wb*s}" stroke="{col}" stroke-width="{.45*s}"/>')
-        parts.append(f'<rect x="{x-1.1*s}" y="{cy+top*s}" width="{2.2*s}" height="{h*s*.62}" rx="{.25*s}" fill="{col}"/>')
-    return "\n".join(parts)
+# liquiditylab.net palette
+BG, PURPLE, PINK, ORANGE, TEXT, TEXT3 = "#080810", "#832388", "#E3436B", "#F0772F", "#f0f0f8", "#5a5a7a"
+FONTS = "@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&amp;family=JetBrains+Mono:wght@700&amp;display=swap');"
+GRADS = (f'<linearGradient id="gh" x1="0" x2="1" y1="0" y2="0"><stop stop-color="{PURPLE}"/><stop offset=".5" stop-color="{PINK}"/><stop offset="1" stop-color="{ORANGE}"/></linearGradient>'
+         f'<linearGradient id="gd" x1="0" x2="1" y1="0" y2="1"><stop stop-color="{PURPLE}"/><stop offset=".52" stop-color="{PINK}"/><stop offset="1" stop-color="{ORANGE}"/></linearGradient>'
+         f'<radialGradient id="r1" cx=".1" cy=".05" r=".6"><stop stop-color="{PINK}" stop-opacity=".16"/><stop offset="1" stop-color="{PINK}" stop-opacity="0"/></radialGradient>'
+         f'<radialGradient id="r2" cx=".9" cy=".95" r=".55"><stop stop-color="{ORANGE}" stop-opacity=".12"/><stop offset="1" stop-color="{ORANGE}" stop-opacity="0"/></radialGradient>'
+         f'<filter id="bg" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2"/></filter>')
 
 def art():
-    g = [f'<rect x="{-BLEED}" y="{-BLEED}" width="{W+2*BLEED}" height="{H+2*BLEED}" fill="{BG}"/>']
-    for x in range(0, 80, 6): g.append(f'<line x1="{x}" y1="-3" x2="{x}" y2="153" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>')
-    for y in range(0, 156, 6): g.append(f'<line x1="-3" y1="{y}" x2="78" y2="{y}" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>')
-    g.append(f'<radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="{BULL}" stop-opacity=".22"/><stop offset="1" stop-color="{BULL}" stop-opacity="0"/></radialGradient>')
-    g.append(f'<circle cx="{W/2}" cy="72" r="26" fill="url(#glow)"/>')
-    # identity strip beside the camera
-    g.append(f'<text x="{W-4.5}" y="10" text-anchor="end" font-family="IBM Plex Mono" font-weight="500" font-size="2.1" letter-spacing=".5" fill="{DIM}">XAUUSD · 4H</text>')
-    g.append(f'<rect x="{W-4.5-12}" y="12.4" width="12" height=".6" fill="{BULL}"/>')
-    g.append(logo(W/2, 69, 1.15))
-    g.append(f'<text x="{W/2}" y="90" text-anchor="middle" font-family="Barlow Condensed" font-weight="700" font-size="9.4" letter-spacing=".5">'
-             f'<tspan fill="{TEXT}">LIQUIDITY</tspan><tspan fill="{BULL}">LAB</tspan></text>')
-    g.append(candles())
-    # full-bleed accent bar + footer
-    g.append(f'<rect x="{-BLEED}" y="141.2" width="{W+2*BLEED}" height="1.1" fill="{BULL}"/>')
-    g.append(f'<text x="{W/2}" y="147" text-anchor="middle" font-family="IBM Plex Mono" font-weight="500" font-size="1.9" letter-spacing=".6" fill="{DIM}">READ THE LIQUIDITY</text>')
-    return "\n".join(g)
+    cx, by, b = W/2, 62.0, 22.0       # badge centre x, top y, size
+    return f'''<defs>{GRADS}</defs>
+<rect x="{-BLEED}" y="{-BLEED}" width="{W+2*BLEED}" height="{H+2*BLEED}" fill="{BG}"/>
+<rect x="{-BLEED}" y="{-BLEED}" width="{W+2*BLEED}" height="{H+2*BLEED}" fill="url(#r1)"/>
+<rect x="{-BLEED}" y="{-BLEED}" width="{W+2*BLEED}" height="{H+2*BLEED}" fill="url(#r2)"/>
+<rect x="{cx-b/2}" y="{by}" width="{b}" height="{b}" rx="{b*9/34:.2f}" fill="url(#gh)" opacity=".45" filter="url(#bg)"/>
+<rect x="{cx-b/2}" y="{by}" width="{b}" height="{b}" rx="{b*9/34:.2f}" fill="url(#gh)"/>
+<text x="{cx}" y="{by+b/2+2.75}" text-anchor="middle" font-family="JetBrains Mono" font-weight="700" font-size="7.8" fill="#fff">LL</text>
+<text x="{cx}" y="{by+b+13}" text-anchor="middle" font-family="Inter" font-weight="800" font-size="8.6" letter-spacing="-.17" fill="{TEXT}">Liquidity<tspan fill="url(#gd)">Lab</tspan></text>
+<text x="{cx}" y="{H-9}" text-anchor="middle" font-family="JetBrains Mono" font-weight="700" font-size="2.1" letter-spacing=".5" fill="{TEXT3}">LIQUIDITYLAB.NET</text>'''
 
 cut = (f'M {R} 0 H {W-R} A {R} {R} 0 0 1 {W} {R} V {H-R} A {R} {R} 0 0 1 {W-R} {H} H {R} A {R} {R} 0 0 1 0 {H-R} V {R} A {R} {R} 0 0 1 {R} 0 Z')
 x,y,w,h,r = CAM
@@ -71,7 +31,7 @@ cam = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}"/>'
 def svg(kind):
     if kind == "print":
         vb = f"{-BLEED} {-BLEED} {W+2*BLEED} {H+2*BLEED}"; size = (W+2*BLEED, H+2*BLEED)
-        body = f'''{art()}
+        body = f'''<g id="artwork">{art()}</g>
 <g id="cut-line" fill="none" stroke="#FF00FF" stroke-width=".2" stroke-dasharray="1 .6"><path d="{cut}"/>{cam}</g>
 <rect id="camera-knockout" x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="#FF00FF" fill-opacity=".18"/>'''
     else:
@@ -80,7 +40,7 @@ def svg(kind):
                               f'<circle cx="{lx-1.6}" cy="{ly-1.6}" r="1.1" fill="#3a4a66" opacity=".7"/>')
         body = f'''<defs><clipPath id="c"><path d="{cut}"/></clipPath>
 <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="2.5" stdDeviation="3" flood-color="#000" flood-opacity=".55"/></filter>
-<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".10"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".08"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
 <rect x="{-pad}" y="{-pad}" width="{W+2*pad}" height="{H+2*pad}" fill="#e9e9ee"/>
 <path d="{cut}" fill="{BG}" filter="url(#sh)"/>
 <g clip-path="url(#c)">{art()}
