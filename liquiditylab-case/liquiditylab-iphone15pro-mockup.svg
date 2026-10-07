@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90.4mm" height="166.0mm" viewBox="-8 -8 90.4 166.0">
+<style>@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap');</style>
+<defs><clipPath id="c"><path d="M 12.0 0 H 62.400000000000006 A 12.0 12.0 0 0 1 74.4 12.0 V 138.0 A 12.0 12.0 0 0 1 62.400000000000006 150.0 H 12.0 A 12.0 12.0 0 0 1 0 138.0 V 12.0 A 12.0 12.0 0 0 1 12.0 0 Z"/></clipPath>
+<filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="2.5" stdDeviation="3" flood-color="#000" flood-opacity=".55"/></filter>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".10"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<rect x="-8" y="-8" width="90.4" height="166.0" fill="#e9e9ee"/>
+<path d="M 12.0 0 H 62.400000000000006 A 12.0 12.0 0 0 1 74.4 12.0 V 138.0 A 12.0 12.0 0 0 1 62.400000000000006 150.0 H 12.0 A 12.0 12.0 0 0 1 0 138.0 V 12.0 A 12.0 12.0 0 0 1 12.0 0 Z" fill="#080810" filter="url(#sh)"/>
+<g clip-path="url(#c)"><rect x="-3.0" y="-3.0" width="80.4" height="156.0" fill="#080810"/>
+<line x1="0" y1="-3" x2="0" y2="153" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="6" y1="-3" x2="6" y2="153" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="12" y1="-3" x2="12" y2="153" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="18" y1="-3" x2="18" y2="153" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="24" y1="-3" x2="24" y2="153" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="30" y1="-3" x2="30" y2="153" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="36" y1="-3" x2="36" y2="153" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="42" y1="-3" x2="42" y2="153" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="48" y1="-3" x2="48" y2="153" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="54" y1="-3" x2="54" y2="153" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="60" y1="-3" x2="60" y2="153" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="66" y1="-3" x2="66" y2="153" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="72" y1="-3" x2="72" y2="153" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="78" y1="-3" x2="78" y2="153" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="0" x2="78" y2="0" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="6" x2="78" y2="6" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="12" x2="78" y2="12" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="18" x2="78" y2="18" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="24" x2="78" y2="24" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="30" x2="78" y2="30" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="36" x2="78" y2="36" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="42" x2="78" y2="42" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="48" x2="78" y2="48" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="54" x2="78" y2="54" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="60" x2="78" y2="60" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="66" x2="78" y2="66" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="72" x2="78" y2="72" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="78" x2="78" y2="78" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="84" x2="78" y2="84" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="90" x2="78" y2="90" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="96" x2="78" y2="96" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="102" x2="78" y2="102" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="108" x2="78" y2="108" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="114" x2="78" y2="114" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="120" x2="78" y2="120" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="126" x2="78" y2="126" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="132" x2="78" y2="132" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="138" x2="78" y2="138" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="144" x2="78" y2="144" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<line x1="-3" y1="150" x2="78" y2="150" stroke="#fff" stroke-opacity=".05" stroke-width=".15"/>
+<radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#44BBA8" stop-opacity=".22"/><stop offset="1" stop-color="#44BBA8" stop-opacity="0"/></radialGradient>
+<circle cx="37.2" cy="72" r="26" fill="url(#glow)"/>
+<text x="69.9" y="10" text-anchor="end" font-family="IBM Plex Mono" font-weight="500" font-size="2.1" letter-spacing=".5" fill="#565B6B">XAUUSD · 4H</text>
+<rect x="57.900000000000006" y="12.4" width="12" height=".6" fill="#44BBA8"/>
+<path d="M 37.2 56.35 C 40.650000000000006 61.525 46.975 67.275 46.975 73.025 A 9.774999999999999 9.774999999999999 0 0 1 27.425000000000004 73.025 C 27.425000000000004 67.275 33.75 61.525 37.2 56.35 Z" fill="none" stroke="#F2F4F9" stroke-width="0.8624999999999999" stroke-linejoin="round"/>
+<line x1="33.06" y1="68.425" x2="33.06" y2="78.89" stroke="#44BBA8" stroke-width="0.5175"/>
+<rect x="31.795" y="71.3" width="2.53" height="4.4206" rx="0.2875" fill="#44BBA8"/>
+<line x1="37.2" y1="66.01" x2="37.2" y2="75.44" stroke="#F5505F" stroke-width="0.5175"/>
+<rect x="35.935" y="67.62" width="2.53" height="3.1371999999999995" rx="0.2875" fill="#F5505F"/>
+<line x1="41.34" y1="63.02" x2="41.34" y2="77.51" stroke="#44BBA8" stroke-width="0.5175"/>
+<rect x="40.075" y="64.86" width="2.53" height="6.7021999999999995" rx="0.2875" fill="#44BBA8"/>
+<text x="37.2" y="90" text-anchor="middle" font-family="Barlow Condensed" font-weight="700" font-size="9.4" letter-spacing=".5"><tspan fill="#F2F4F9">LIQUIDITY</tspan><tspan fill="#44BBA8">LAB</tspan></text>
+<line x1="5.0" y1="126.21" x2="40.12727272727273" y2="126.21" stroke="#F5AC6F" stroke-width=".35" stroke-dasharray="1.2 .9"/>
+<text x="5.0" y="129.21" font-family="IBM Plex Mono" font-weight="500" font-size="1.9" letter-spacing=".35" fill="#F5AC6F">SELL-SIDE LIQUIDITY</text>
+<line x1="6.46" y1="112.45" x2="6.46" y2="116.40" stroke="#F5505F" stroke-width=".32"/>
+<rect x="5.64" y="113.18" width="1.64" height="1.82" fill="#F5505F"/>
+<line x1="9.39" y1="113.74" x2="9.39" y2="119.71" stroke="#F5505F" stroke-width=".32"/>
+<rect x="8.57" y="114.99" width="1.64" height="3.70" fill="#F5505F"/>
+<line x1="12.32" y1="116.18" x2="12.32" y2="119.27" stroke="#44BBA8" stroke-width=".32"/>
+<rect x="11.50" y="117.39" width="1.64" height="1.30" fill="#44BBA8"/>
+<line x1="15.25" y1="116.78" x2="15.25" y2="121.44" stroke="#F5505F" stroke-width=".32"/>
+<rect x="14.43" y="117.39" width="1.64" height="3.40" fill="#F5505F"/>
+<line x1="18.17" y1="119.15" x2="18.17" y2="123.21" stroke="#F5505F" stroke-width=".32"/>
+<rect x="17.35" y="120.79" width="1.64" height="1.73" fill="#F5505F"/>
+<line x1="21.10" y1="119.71" x2="21.10" y2="124.33" stroke="#44BBA8" stroke-width=".32"/>
+<rect x="20.28" y="121.08" width="1.64" height="1.44" fill="#44BBA8"/>
+<line x1="24.03" y1="120.02" x2="24.03" y2="126.21" stroke="#F5505F" stroke-width=".32"/>
+<rect x="23.21" y="121.08" width="1.64" height="3.28" fill="#F5505F"/>
+<line x1="26.95" y1="122.67" x2="26.95" y2="125.66" stroke="#F5505F" stroke-width=".32"/>
+<rect x="26.13" y="124.36" width="1.64" height="0.40" fill="#F5505F"/>
+<line x1="29.88" y1="122.69" x2="29.88" y2="125.68" stroke="#44BBA8" stroke-width=".32"/>
+<rect x="29.06" y="123.37" width="1.64" height="1.37" fill="#44BBA8"/>
+<line x1="32.81" y1="122.60" x2="32.81" y2="126.09" stroke="#F5505F" stroke-width=".32"/>
+<rect x="31.99" y="123.37" width="1.64" height="1.41" fill="#F5505F"/>
+<line x1="35.74" y1="123.63" x2="35.74" y2="126.04" stroke="#44BBA8" stroke-width=".32"/>
+<rect x="34.92" y="124.66" width="1.64" height="0.40" fill="#44BBA8"/>
+<line x1="38.66" y1="124.06" x2="38.66" y2="135.85" stroke="#F5505F" stroke-width=".32"/>
+<rect x="37.84" y="124.66" width="1.64" height="10.39" fill="#F5505F"/>
+<line x1="41.59" y1="125.44" x2="41.59" y2="136.00" stroke="#44BBA8" stroke-width=".32"/>
+<rect x="40.77" y="126.54" width="1.64" height="8.51" fill="#44BBA8"/>
+<line x1="44.52" y1="120.32" x2="44.52" y2="127.47" stroke="#44BBA8" stroke-width=".32"/>
+<rect x="43.70" y="121.46" width="1.64" height="5.09" fill="#44BBA8"/>
+<line x1="47.45" y1="116.40" x2="47.45" y2="122.31" stroke="#44BBA8" stroke-width=".32"/>
+<rect x="46.63" y="117.87" width="1.64" height="3.59" fill="#44BBA8"/>
+<line x1="50.37" y1="116.64" x2="50.37" y2="121.19" stroke="#F5505F" stroke-width=".32"/>
+<rect x="49.55" y="117.87" width="1.64" height="1.61" fill="#F5505F"/>
+<line x1="53.30" y1="113.36" x2="53.30" y2="121.33" stroke="#44BBA8" stroke-width=".32"/>
+<rect x="52.48" y="114.27" width="1.64" height="5.21" fill="#44BBA8"/>
+<line x1="56.23" y1="110.16" x2="56.23" y2="115.82" stroke="#44BBA8" stroke-width=".32"/>
+<rect x="55.41" y="111.25" width="1.64" height="3.02" fill="#44BBA8"/>
+<line x1="59.15" y1="110.06" x2="59.15" y2="113.79" stroke="#F5505F" stroke-width=".32"/>
+<rect x="58.33" y="111.25" width="1.64" height="1.96" fill="#F5505F"/>
+<line x1="62.08" y1="106.50" x2="62.08" y2="114.51" stroke="#44BBA8" stroke-width=".32"/>
+<rect x="61.26" y="108.06" width="1.64" height="5.15" fill="#44BBA8"/>
+<line x1="65.01" y1="103.45" x2="65.01" y2="109.52" stroke="#44BBA8" stroke-width=".32"/>
+<rect x="64.19" y="104.40" width="1.64" height="3.66" fill="#44BBA8"/>
+<line x1="67.94" y1="98.00" x2="67.94" y2="105.54" stroke="#44BBA8" stroke-width=".32"/>
+<rect x="67.12" y="99.31" width="1.64" height="5.09" fill="#44BBA8"/>
+<rect x="37.05" y="122.86" width="3.22" height="14.20" rx=".6" fill="none" stroke="#F5AC6F" stroke-width=".3" opacity=".9"/>
+<text x="41.01" y="138.05" font-family="IBM Plex Mono" font-weight="500" font-size="1.9" letter-spacing=".35" fill="#F5AC6F">SWEPT</text>
+<rect x="-3.0" y="141.2" width="80.4" height="1.1" fill="#44BBA8"/>
+<text x="37.2" y="147" text-anchor="middle" font-family="IBM Plex Mono" font-weight="500" font-size="1.9" letter-spacing=".6" fill="#565B6B">READ THE LIQUIDITY</text>
+<rect x="4.2" y="4.2" width="39.0" height="39.0" rx="9.5" fill="#3b3a38"/>
+<rect x="5.4" y="5.4" width="36.6" height="36.6" rx="8.5" fill="#4a4946"/>
+<circle cx="15.2" cy="15.2" r="7.4" fill="#1b1c22"/><circle cx="15.2" cy="15.2" r="5.6" fill="#050507" stroke="#2c2e36" stroke-width=".5"/><circle cx="13.6" cy="13.6" r="1.1" fill="#3a4a66" opacity=".7"/><circle cx="15.2" cy="32.2" r="7.4" fill="#1b1c22"/><circle cx="15.2" cy="32.2" r="5.6" fill="#050507" stroke="#2c2e36" stroke-width=".5"/><circle cx="13.6" cy="30.6" r="1.1" fill="#3a4a66" opacity=".7"/><circle cx="32.2" cy="23.7" r="7.4" fill="#1b1c22"/><circle cx="32.2" cy="23.7" r="5.6" fill="#050507" stroke="#2c2e36" stroke-width=".5"/><circle cx="30.6" cy="22.099999999999998" r="1.1" fill="#3a4a66" opacity=".7"/>
+<circle cx="32.2" cy="9.4" r="1.6" fill="#ddd" opacity=".8"/><circle cx="32.2" cy="38.0" r="1.2" fill="#111"/>
+<rect x="-1" y="-1" width="76.4" height="152.0" fill="url(#sheen)"/></g>
+<path d="M 12.0 0 H 62.400000000000006 A 12.0 12.0 0 0 1 74.4 12.0 V 138.0 A 12.0 12.0 0 0 1 62.400000000000006 150.0 H 12.0 A 12.0 12.0 0 0 1 0 138.0 V 12.0 A 12.0 12.0 0 0 1 12.0 0 Z" fill="none" stroke="#1d1e26" stroke-width="1.2"/>
+</svg>
