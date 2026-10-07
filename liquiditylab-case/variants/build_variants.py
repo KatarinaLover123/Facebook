@@ -1,6 +1,5 @@
 """Four detailed LiquidityLab iPhone 15 Pro case variants (liquiditylab.net logo + palette)."""
 import math, random, sys, os
-out = sys.argv[1]
 W, H, R = 74.4, 150.0, 12.0
 BLEED = 3.0
 CX, CY, CW, CH, CR = 4.2, 4.2, 39.0, 39.0, 9.5
@@ -180,7 +179,11 @@ def svg(art, kind):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{size[0]}mm" height="{size[1]}mm" viewBox="{vb}">'
             f'<style>{FONTS}</style>{body}</svg>')
 
-for name, fn in VARIANTS.items():
-    art = fn()
-    for kind in ("print", "mockup"):
-        open(os.path.join(out, f"{name}-{kind}.svg"), "w").write(svg(art, kind))
+def write(variants, out):
+    for name, fn in variants.items():
+        art = fn()
+        for kind in ("print", "mockup"):
+            open(os.path.join(out, f"{name}-{kind}.svg"), "w").write(svg(art, kind))
+
+if __name__ == "__main__":
+    write(VARIANTS, sys.argv[1])
