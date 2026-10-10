@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80.4mm" height="156.0mm" viewBox="-3.0 -3.0 80.4 156.0">
+<style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&amp;family=JetBrains+Mono:wght@700&amp;display=swap');</style>
+<g id="artwork"><defs><linearGradient id="gh" x1="0" x2="1" y1="0" y2="0"><stop stop-color="#832388"/><stop offset=".5" stop-color="#E3436B"/><stop offset="1" stop-color="#F0772F"/></linearGradient><linearGradient id="gd" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#832388"/><stop offset=".52" stop-color="#E3436B"/><stop offset="1" stop-color="#F0772F"/></linearGradient><radialGradient id="r1" cx=".1" cy=".05" r=".6"><stop stop-color="#E3436B" stop-opacity=".16"/><stop offset="1" stop-color="#E3436B" stop-opacity="0"/></radialGradient><radialGradient id="r2" cx=".9" cy=".95" r=".55"><stop stop-color="#F0772F" stop-opacity=".12"/><stop offset="1" stop-color="#F0772F" stop-opacity="0"/></radialGradient><filter id="bg" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2"/></filter></defs>
+<rect x="-3.0" y="-3.0" width="80.4" height="156.0" fill="#080810"/>
+<rect x="-3.0" y="-3.0" width="80.4" height="156.0" fill="url(#r1)"/>
+<rect x="-3.0" y="-3.0" width="80.4" height="156.0" fill="url(#r2)"/>
+<rect x="26.200000000000003" y="62.0" width="22.0" height="22.0" rx="5.82" fill="url(#gh)" opacity=".45" filter="url(#bg)"/>
+<rect x="26.200000000000003" y="62.0" width="22.0" height="22.0" rx="5.82" fill="url(#gh)"/>
+<text x="37.2" y="75.75" text-anchor="middle" font-family="JetBrains Mono" font-weight="700" font-size="7.8" fill="#fff">LL</text>
+<text x="37.2" y="97.0" text-anchor="middle" font-family="Inter" font-weight="800" font-size="8.6" letter-spacing="-.17" fill="#f0f0f8">Liquidity<tspan fill="url(#gd)">Lab</tspan></text>
+<text x="37.2" y="141.0" text-anchor="middle" font-family="JetBrains Mono" font-weight="700" font-size="2.1" letter-spacing=".5" fill="#5a5a7a">LIQUIDITYLAB.NET</text></g>
+<g id="cut-line" fill="none" stroke="#FF00FF" stroke-width=".2" stroke-dasharray="1 .6"><path d="M 12.0 0 H 62.400000000000006 A 12.0 12.0 0 0 1 74.4 12.0 V 138.0 A 12.0 12.0 0 0 1 62.400000000000006 150.0 H 12.0 A 12.0 12.0 0 0 1 0 138.0 V 12.0 A 12.0 12.0 0 0 1 12.0 0 Z"/><rect x="4.2" y="4.2" width="39.0" height="39.0" rx="9.5"/></g>
+<rect id="camera-knockout" x="4.2" y="4.2" width="39.0" height="39.0" rx="9.5" fill="#FF00FF" fill-opacity=".18"/>
+</svg>
